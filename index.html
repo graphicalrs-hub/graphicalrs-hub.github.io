@@ -1,1 +1,173 @@
-Portfolio-Website
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>Portfolio</title>
+	<script src="menu.js"></script>
+</head>
+<body>
+    
+	<header>
+
+		<a href="index.html"><img src="slike/logo.png" alt="logo" width="100px"></a>
+		
+		<div id="links">
+			<nav>
+				<a href="#about-me-section">About</a>
+				<a href="#service-link">Service</a>
+				<a href="contact.html">Contact</a>
+				<a href="#recent-work">Recent work</a>
+			</nav>
+	
+			<div class="square">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="search-icon">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+                    </svg>
+                    <input type="search" class="search" placeholder="Search"/>
+            </div>
+
+				<button onclick="showNav()" id="menu-button">
+                    <img src="ikonice\hamburger.svg" alt="manu">
+                </button>
+                <div class="menu" id="menu" style="height: 0px;">
+                    <a href="index.html#about-me-section">About</a>
+					<a href="index.html#service-link">Service</a>
+					<a href="contact.html">Contact</a>
+					<a href="index.html#recent-work">Recent work</a>
+                </div>
+		</div>   
+	</header>
+
+	<div class="first-page">
+		<img id="rs" src="slike/inicijali.png" alt="rs">
+		<div class="hello">
+			<h1>Hello,</h1>
+			<h2 class="sub-title">I'AM RADA STOJANOVIC</h2>
+			<h3>GRAPHIC DESIGNER</h3>
+		</div>
+		<div class="dugme">
+			<a href="contact.html">
+			<p >LET'S WORK!</p>
+			</a>
+		</div>
+	</div>
+
+	
+	<div class="me">
+		<div class="my-photo">
+			<img src="slike/ja-01.png" alt="my photo">
+		</div>
+		<div class="about-me-info">
+			<div class="title" id="about-me-section">
+				<h1 >ABOUT <span>ME</span></h1>
+			</div>
+			<div class="about-me-text">
+				<p id="text">I' am a student of a last year at a Faculty of Technology and Science, department of Graphic engineering and design. <br>
+					Also, we had many subjects at the faculty I' am most interested in UI and UX design and this portfolio is my biggest project form this area. Even though, I like this the most I also do the other things form graphic design area.<br>
+					Creating logos and visual identity is as wall as making 3D word in Unreal Engine is what I' am doing.<br>
+					Photography, artistic one or for commercial use is also I' am passionate about and work on.<br>
+				</p>
+			</div>
+			<div class="contact-about-me">
+				<div>
+					<p id="age">
+						Age:  22
+					</p>
+					<p id="email">
+						E-mail:  radastojanovic45@gmail.com
+					</p>
+				</div>
+				<div>
+					<p id="location">
+						Location:  Novi Sad, Serbia
+					</p>
+					<p id="phone">
+						Phone:  +381 60 1640201
+					</p>
+				</div>
+			</div>
+		
+		</div>
+	</div>
+
+
+	<div class="service">
+		<div class = "service-title-div" id="service-link">
+		<h1 class="sub-section-title">SERVICE</h1>
+		</div>
+
+		<div class="icon-field">
+			<a href="ui-ux.html">
+			<div class="icon-tab">
+				<img src="ikonice\ui-ux.png" alt="ui-ux icon">
+				<p>Ui/ux design</p>
+			</div>
+			</a>
+			<a href="photography.html">
+			<div class="icon-tab">
+				<img src="ikonice\fotoaparat-01.png" alt="camera icon">
+				<p>Photography</p>
+			</div>
+			</a>
+
+			<a href="unreal-engine.html">
+			<div class="icon-tab">
+
+				<img src="ikonice\3d-01.png" alt="3d icon">
+				<p>Unreal Engine</p>
+			</div>
+			</a>
+			
+			<a href="logo-design.html">
+				<div class="icon-tab">
+					<img src="ikonice\pen-01.png" alt="pentool icon">
+					<p>Logo design</p> 
+				</div>
+			</a>
+		</div>
+	</div>
+
+	<div class="work">
+		<div id="recent-work">
+		<h1>RECENT <span>WORK</span></h1>
+		</div>
+		<p>Unreal Engine - Prehistoric world</p>
+		<div id="photo">
+			<img src="slike\screenshot 1.jpg" alt="Unreal Engine photo">
+			<img src="slike\screenshot 4.jpg" alt="Unreal Engine photo">
+			<img src="slike\screenshot 5.jpg" alt="Unreal Engine photo">
+		</div>
+	</div>
+
+	<!-- footer -->
+
+	<div class="footer">
+
+    <a href="index.html"><img src="slike/logo.png" alt="logo"></a>
+
+    <div class="contact-info">
+        <p id="email-footer"><span>E-mail:</span> radastojanovic45@gmail.com</p>
+        <p id="phone-footer"><span>Phone:</span> +381 60 1640201</p>
+        <div class="social">
+            <a href="https://www.instagram.com/rada_stojanovic_/" target="_blank">
+  			<img src="ikonice/insta.png" alt="Instagram">
+			</a>
+            <a href="https://wa.me/381601640201" target="_blank">
+  			<img src="ikonice/wa-01.png" alt="WhatsApp" width="30" height="30">
+			</a>
+            <a href="https://www.facebook.com/rada.stojanovic.33" target="_blank">
+ 			<img src="ikonice/fb.png" alt="Facebook" width="30" height="30">
+			</a>
+        </div>
+    </div>
+
+    <img src="slike/footernovi-01.png" alt="bg decoration" class="footer-bg">
+	</div>
+	
+	
+
+
+</body>
+</html>

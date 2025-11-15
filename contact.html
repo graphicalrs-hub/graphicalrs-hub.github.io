@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>Portfolio</title>
+	<script src="menu.js"></script>
+</head>
+<body id="contact-body">
+
+	<header>
+
+		<a href="index.html"><img src="slike/logo.png" alt="logo" width="100px"></a>
+		
+		<div id="links">
+			<nav>
+				<a href="index.html#about-me-section">About</a>
+				<a href="index.html#service-link">Service</a>
+				<a href="contact.html">Contact</a>
+				<a href="index.html#recent-work">Recent work</a>
+			</nav>
+	
+			<div class="square">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="search-icon">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+                    </svg>
+                    <input type="search" class="search" placeholder="Search"/>
+            </div>
+
+				<button onclick="showNav()" id="menu-button">
+                    <img src="ikonice\hamburger.svg">
+                </button>
+                <div class="menu" id="menu" style="height: 0px;">
+                    <a href="#about-me-section">About</a>
+					<a href="#service-link">Service</a>
+					<a href="/contact.html">Contact</a>
+					<a href="#recent-work">Recent work</a>
+                </div>
+		</div>   
+	</header>
+
+
+	<div class="contact">
+		<h1>Let's work together!</h1>
+		<h3>Whrite me which service you need to be done.</h3>
+		<div class="form-info">
+			<form id="contact-form">
+				<input type="email" name="email" placeholder="E-mail"/>
+				<textarea name="message" placeholder="Your message..." rows="15" cols="35"></textarea>
+			</form>
+			<div class="contact-info">
+				<p id="email">
+					E-mail: <br><span>radastojanovic45@gmail.com</span>
+				</p>
+				<p id="phone">
+					Phone: <br> <span> +381 60 1640201 </span>
+				</p>
+			</div>
+
+		</div>
+		<div class="submit-button">
+			<button type="submit" form="contact-form">Send</button>
+		</div>
+	</div>
+
+	<!-- === POPUP PROZOR === -->
+	<div id="popup" class="popup">
+ 	 	<div class="popup-content">
+   	 		<p id="thank-you">Thank you for contacting me!</p> 
+			<p id="comment">If you have any more questions or comments, I would be more than happy to hear them! <br>I'll get back to you as soon as I can.</p>
+   			<button id="close-popup">OK</button>
+ 	 	</div>
+	</div>
+
+	<script>
+  // Kad se forma pošalje spreči refresh i otvori popup
+  document.getElementById("contact-form").addEventListener("submit", function(e) {
+    e.preventDefault(); // sprečava ponovno učitavanje stranice
+    document.getElementById("popup").style.display = "flex";
+    this.reset(); 
+  });
+
+  // Zatvaranje pop-up prozora
+  document.getElementById("close-popup").addEventListener("click", function() {
+    document.getElementById("popup").style.display = "none";
+  });
+</script>
+
+<!-- footer -->
+
+<div class="footer">
+
+    <a href="index.html"><img src="slike/logo.png" alt="logo"></a>
+
+    <div class="contact-info">
+        <p id="email-footer"><span>E-mail:</span> radastojanovic45@gmail.com</p>
+        <p id="phone-footer"><span>Phone:</span> +381 60 1640201</p>
+        <div class="social">
+            <a href="https://www.instagram.com/rada_stojanovic_/" target="_blank">
+  			<img src="ikonice/insta.png" alt="Instagram">
+			</a>
+            <a href="https://wa.me/381601640201" target="_blank">
+  			<img src="ikonice/wa-01.png" alt="WhatsApp" width="30" height="30">
+			</a>
+            <a href="https://www.facebook.com/rada.stojanovic.33" target="_blank">
+ 			<img src="ikonice/fb.png" alt="Facebook" width="30" height="30">
+			</a>
+        </div>
+    </div>
+
+    <img src="slike/footernovi-01.png" alt="bg decoration" class="footer-bg">
+	</div>
