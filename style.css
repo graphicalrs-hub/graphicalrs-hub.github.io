@@ -762,18 +762,17 @@ h1 span{
     display: flex;
     flex-direction: column;
     justify-content: center;   
-    align-items: center;       
-    min-height: 100vh;         
-    padding-top: 9vh;      
+    align-items: center;           
     box-sizing: border-box;
 }
 
 .photos-section h1 {
     text-align: center;
     font-family: Fin;
-    font-size: 6vw;
+    font-size: 5vw;
     color: white;
-    padding-bottom: 5vh;
+    padding-bottom: 6vh;
+    margin-top: 13vh;
 }
 
 .photos-section h1 span {
@@ -794,7 +793,7 @@ h1 span{
 
 .photos img {
     width: 50vw;
-    max-width: 700px;
+    max-width: 300px;
     min-width: 250px;
     height: auto;
     border-radius: 10px;
@@ -810,11 +809,11 @@ h1 span{
 
 /* Sekcija za ambientalne fotografije */
 .ambiental-photos {
-  padding-top: 5vh;
+  padding-top: 20vh;
+  padding-bottom: 20vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
   box-sizing: border-box;
   gap: 100px;
   flex-wrap: nowrap;
@@ -843,7 +842,7 @@ h1 span{
 
 .amb-photos img {
   width: 40vw;
-  max-width: 800px;
+  max-width: 300px;
   height: auto;
   border-radius: 10px;
   transition: transform 0.3s ease;
@@ -858,6 +857,8 @@ h1 span{
   .ambiental-photos {
     flex-direction: column;      
     gap: 40px;
+    padding-top: 25vh;
+    padding-bottom: 20vh;
   }
 
   .ambiental-photos h1 {
@@ -867,10 +868,10 @@ h1 span{
     order: -1;                   /* naslov ide na vrh */
   }
 
-  .amb-photos img {
+  /* .amb-photos img {
     width: 50vw;                 
     max-width: 100%;
-  }
+  } */
 }
 
 
@@ -880,7 +881,7 @@ h1 span{
 #carousel {
  
   text-align: center;
-  font-size: 6vw;
+  font-size: 5vw;
   margin-bottom: 1vh;
   font-family: Fin;
   color: white;
@@ -897,7 +898,7 @@ h1 span{
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  padding-top: 3vh;
+  padding-top: 2vh;
   overflow: hidden;
 }
 
@@ -917,7 +918,7 @@ h1 span{
 
 .slide img {
   height: 70vh;
-  width: auto;
+  width: 60vw;
   border-radius: 15px;
   object-fit: cover;
 }
@@ -958,6 +959,22 @@ input[type="radio"] {
   background: #E43A56;
 }
 
+@media (max-width:900px){
+  .photos-section h1{
+    padding-top: 10vh;
+    font-size: 10vw;
+    padding-bottom: 9vh;
+  }
+
+  #carousel{
+    font-size: 10vw;
+  }
+
+  .slide img{
+    height: 70vh;
+    width: auto;
+  }
+}
 
 
 /* LOGO DESIGN */
@@ -1342,7 +1359,7 @@ p#thank-you {
 
 #email-footer, #phone-footer {
 
-    font-size: clamp(25px, 1.3vw, 70px);
+    font-size: clamp(20px, 1vw, 80px);
     font-family: Enw;
    
 }
