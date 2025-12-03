@@ -853,12 +853,12 @@ h1 span{
   transform: scale(1.05);
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1000px) {
   .ambiental-photos {
     flex-direction: column;      
     gap: 40px;
-    padding-top: 25vh;
-    padding-bottom: 20vh;
+    padding-top: 15vh;
+    padding-bottom: 15vh;
   }
 
   .ambiental-photos h1 {
@@ -959,11 +959,10 @@ input[type="radio"] {
   background: #E43A56;
 }
 
-@media (max-width:900px){
+@media (max-width:1000px){
   .photos-section h1{
-    padding-top: 10vh;
     font-size: 10vw;
-    padding-bottom: 9vh;
+    padding-bottom: 5vh;
   }
 
   #carousel{
