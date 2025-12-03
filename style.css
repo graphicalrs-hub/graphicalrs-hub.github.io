@@ -198,7 +198,7 @@ header{
 .dugme{
     font-family: Fin;
     width: 148px;
-    min-width: 100px;
+    min-width: 120px;
     height: 48px;
     background-color: #E43A56;
     border-radius: 15px 0 15px 0;
@@ -380,7 +380,7 @@ h1 span{
   font-weight: bold;
   font-size: 20px;
   background-color: #E43A56;
-  padding: 3vw 3vw;
+  padding: 1vh 3vw;
   border-radius: 16px 0;
   align-items: start;
   justify-content: start;
@@ -1312,8 +1312,8 @@ p#thank-you {
 }
 
 .footer img[alt="logo"] {
-    height: 11vh;
-    margin: 37px 0 0 30px;
+    height: 5vw;
+    margin: 37px 0 0 20px;
 }
 
 
@@ -1338,7 +1338,7 @@ p#thank-you {
 
 #email-footer, #phone-footer {
 
-    font-size: 3vh;
+    font-size: clamp(10px, 1vw, 50px);
     font-family: Enw;
    
 }
@@ -1406,10 +1406,8 @@ p#thank-you {
     opacity: 0.2;
   }
 
-  #email-footer, #phone-footer {
-
-    font-size: 2vh;
 }
+
 
 @media (max-width: 450px) {
   .footer-bg {
@@ -1439,6 +1437,9 @@ p#thank-you {
 .video-wrapper{
   width: 100vw;
 }
+
+
+/* logo section */
 
 #logo{
   height: auto;
@@ -1473,7 +1474,7 @@ p#thank-you {
 #menu-button{
     display: block;
     width: 50px;
-    height: 45px;
+    height: 49px;
     margin:0;
     padding:3px;
     border-radius: 15px 0 15px 0;
