@@ -1144,7 +1144,7 @@ input[type="radio"] {
 }
 
 .contact h1 {
-    margin-top: 130px;
+    margin-top: 100px;
     margin-left: 5vw;
     font-size: 100px;
 	  font-family: Fin;
@@ -1185,7 +1185,7 @@ p span {
 }
 
 form{
-    margin-top: 80px;
+    margin-top: 15px;
     margin-right: 5vw;
     
 }
@@ -1228,9 +1228,11 @@ textarea:focus {
   border:2px solid white;
 }
 
+
+
 button{
     width: 15%;
-    min-width: 40px;
+    min-width: 110px;
     background-color: #E43A56;
     border: 2px solid #E43A56;
     border-radius: 30px 0 30px 0;
@@ -1240,8 +1242,7 @@ button{
     text-transform: uppercase;
     display: block;
     justify-content: center;
-    height: 5vh;
-    margin-top: 2vh;
+    height: 7vh;
     overflow: hidden;
     
 }
@@ -1250,13 +1251,12 @@ button:hover{
     width: 15%;
     background-color:#111111;
     border: 2px solid #E43A56;
-    border-radius: 15px 0 15px 0;
+    border-radius: 30px 0 30px 0;
     color: white;
     font-weight: bold;
     text-transform: uppercase;
     display: block;
     justify-content: center;
-    height: 5vh;
 }
 
 .submit-button{
@@ -1264,6 +1264,7 @@ button:hover{
     justify-content: center;
     align-items: center;
     height: 10vh;
+    margin-top: 7vh;
 }
 
 
@@ -1331,6 +1332,19 @@ p#thank-you {
   to { transform: scale(1); opacity: 1; }
 }
 
+@media (max-width:1000px) {
+  button {
+    height: 3vh;
+  }
+
+  .submit-button{
+    margin-top: 2vh;
+  }
+
+  .contact h1{
+    margin-top: 10vh;
+  }
+}
 
 
 
