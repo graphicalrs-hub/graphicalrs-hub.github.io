@@ -1334,7 +1334,7 @@ p#thank-you {
 
 @media (max-width:1000px) {
   button {
-    height: 3vh;
+    height: 2vh;
   }
 
   .submit-button{
@@ -1342,7 +1342,7 @@ p#thank-you {
   }
 
   .contact h1{
-    margin-top: 10vh;
+    margin-top: 18vh;
   }
 }
 
