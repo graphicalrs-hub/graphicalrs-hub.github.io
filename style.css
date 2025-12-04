@@ -793,7 +793,7 @@ h1 span{
 
 .photos img {
     width: 300px;
-    min-width: 290px;
+    min-width: 300px;
     height: auto;
     border-radius: 10px;
     transition: transform 0.3s ease;
@@ -840,8 +840,8 @@ h1 span{
 
 
 .amb-photos img {
-  width: 40vw;
-  max-width: 300px;
+  
+  width: 30vw;
   height: auto;
   border-radius: 10px;
   transition: transform 0.3s ease;
@@ -858,6 +858,13 @@ h1 span{
     gap: 40px;
     padding-top: 15vh;
     padding-bottom: 15vh;
+  }
+
+  .amb-photos img {
+  
+  width: 60vw;
+  height: auto;
+
   }
 
   .ambiental-photos h1 {
@@ -965,8 +972,10 @@ input[type="radio"] {
     padding-bottom: 5vh;
   }
 
- .photos {
+ .photos img {
         flex-direction: column;
+        width: 60vw;
+        height: auto;
         
     }
 
