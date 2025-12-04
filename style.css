@@ -524,6 +524,8 @@ h1 span{
   .my-photo {
     order: 1;
     margin: 0 auto;
+    width: 70vw;
+    height: auto;
   }
 
   .about-me-info {
