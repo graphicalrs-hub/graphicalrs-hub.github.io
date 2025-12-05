@@ -637,12 +637,55 @@ h1 span{
 #ui-ux-body{
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  min-height: 100vh;
+  color: white;
+}
+
+.video-section h1 {
+  color: white;
+  font-family: Fin;
+  font-size: 6vw;
+  margin-bottom: 30px;
+  text-align: center;
+  margin-top: 13vh;
+}
+
+.video-section span{
+    color: #E43A56;
+}
+
+.first-photo{
+  height: 100vh;
+  display: flex;
+  padding-left: 13vw;
+  padding-top: 4vh;
+
+}
+
+#home{
+  height: 100vh;
+}
+
+.first-photo p{
+  width: 40vw;
+  height: auto;
+  padding-top: 3vh;
+  margin-left: 5vw;
+  line-height: 4vh;
+  border-bottom: solid 1px #E43A56;
+  border-top: solid 1px #E43A56;
 }
 
 
-.video-section {
+
+
+
+
+
+
+
+
+
+/* .video-section {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -651,20 +694,6 @@ h1 span{
   box-sizing: border-box;
   overflow: hidden;
   padding-top: 10vh;
-}
-
-
-.video-section h1 {
-  color: white;
-  font-family: Fin;
-  font-size: 6vw;
-  margin-bottom: 30px;
-  text-align: center;
-  overflow: hidden;
-}
-
-.video-section span{
-    color: #E43A56;
 }
 
 
@@ -685,7 +714,7 @@ h1 span{
   border-radius: 10px;
   display: block;
 
-}
+} */
 
 
 
@@ -1344,7 +1373,7 @@ p#thank-you {
   }
 
   .contact h1{
-    margin-top: 18vh;
+    margin-top: 10vh;
   }
 }
 
