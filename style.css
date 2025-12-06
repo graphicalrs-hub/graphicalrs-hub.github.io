@@ -767,6 +767,63 @@ h1 span{
 }
 
 
+@media (max-width: 1024px) {
+
+    /* Glavna sekcija */
+    .main-display {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-bottom: 0vh;
+    }
+
+    #mainImage {
+        height: auto;
+        width: 90vw;
+    }
+
+    #mainText {
+        width: 90vw;
+        margin: 0;
+        margin-top: 4vh;
+        padding-left: 0;
+        text-align: justify;
+    }
+
+    /* Donje slike – jedna ispod druge */
+    .thumbs {
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+        margin-top: 5vh;
+    }
+
+    .thumb img {
+        width: 70vw;
+    }
+
+    .thumb p {
+        font-size: 5vw;
+        margin-bottom: 1vh ;
+        margin-top: 2vh;
+    }
+}
+
+/* TELEFONI — sve ispod 600px */
+@media (max-width: 600px) {
+
+    #mainImage {
+        width: 95vw;
+    }
+
+    .thumb img {
+        width: 85vw;
+    }
+
+    .thumb p {
+        font-size: 6vw;
+    }
+}
 
 
 
