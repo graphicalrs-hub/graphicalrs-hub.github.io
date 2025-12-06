@@ -644,9 +644,9 @@ h1 span{
   color: white;
   font-family: Fin;
   font-size: 6vw;
-  margin-bottom: 30px;
+  margin-bottom: 10vh;
   text-align: center;
-  margin-top: 13vh;
+  margin-top: 16vh;
 }
 
 .video-section span{
@@ -769,8 +769,14 @@ h1 span{
 
 @media (max-width: 1024px) {
 
+  #mainText{
+    padding-top: 2vh;
+    padding-bottom: 2vh
+  }
+
   .video-section h1{
     margin-top: 10vh;
+    margin-bottom: 3vh;
   }
 
     /* Glavna sekcija */
@@ -990,29 +996,13 @@ h1 span{
   .fade-in-up h2{
     padding-top: 4vh;
     padding-bottom: 3vh;
+    font-size: 4vw;
   }
 
   .unreal {
     padding-top: 5vh;
   }
 
-}
-
-@media (max-width:600px) {
-
-  .unreal {
-    padding-top: 5vh;
-  }
-
-  .fade-in-up p {
-    margin-bottom: 1vh;
-
-  }
-
-  .fade-in-up h2{
-    padding-top: 8vh;
-    padding-bottom: 2vh;
-  }
 }
 
 
