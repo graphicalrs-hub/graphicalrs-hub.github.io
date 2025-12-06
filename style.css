@@ -745,7 +745,7 @@ h1 span{
     background: rgba(0,0,0,0.8);
     justify-content: center;
     align-items: center;
-    z-index: 9999;
+    z-index: 9;
 }
 
 /* Slika u popupu */
@@ -768,6 +768,10 @@ h1 span{
 
 
 @media (max-width: 1024px) {
+
+  .video-section h1{
+    margin-top: 10vh;
+  }
 
     /* Glavna sekcija */
     .main-display {
@@ -807,10 +811,17 @@ h1 span{
         margin-bottom: 1vh ;
         margin-top: 2vh;
     }
+
+    
 }
 
 /* TELEFONI — sve ispod 600px */
 @media (max-width: 600px) {
+
+  .popup-content {
+    width: 100vw;
+    height: 100vh;
+    }
 
     #mainImage {
         width: 95vw;
@@ -892,6 +903,7 @@ h1 span{
 }
 
 .unreal h1 {
+    padding-top: 5vh;
     font-family: Fin;
     font-size: 5vw;
     color: white;
@@ -913,7 +925,7 @@ h1 span{
 }
 
 .unrela-video {
-    width: 90%;
+    width: 85%;
     max-width: 1200px;
 }
 
@@ -924,9 +936,84 @@ h1 span{
     display: block;
 }
 
+.fade-in-up{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 85%;
+  max-width: 1200px;
+  margin: 0 auto;
+  
 
+}
 
+.fade-in-up h2 {
+  color: white;
+  font-family: Fin;
+  font-size: 3vw;
+  text-align: left;
+  padding-bottom: 7vh;
+  padding-top: 11vh;
+  padding-left: 1vh;
 
+}
+
+.fade-in-up span{
+  color: #E43A56;
+}
+
+.fade-in-up p {
+  color: white;
+  font-size: 17px;
+  text-align: justify;
+  margin-bottom: 9vh
+}
+
+/* POČETNO STANJE – sakriveno i malo dole */
+.fade-in-up {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+/* KADA SE ELEMENT POJAVI */
+.fade-in-up.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+@media (max-width:1024px) {
+  .fade-in-up p {
+    margin-bottom: 5vh;
+  }
+
+  .fade-in-up h2{
+    padding-top: 4vh;
+    padding-bottom: 3vh;
+  }
+
+  .unreal {
+    padding-top: 5vh;
+  }
+
+}
+
+@media (max-width:600px) {
+
+  .unreal {
+    padding-top: 5vh;
+  }
+
+  .fade-in-up p {
+    margin-bottom: 1vh;
+
+  }
+
+  .fade-in-up h2{
+    padding-top: 8vh;
+    padding-bottom: 2vh;
+  }
+}
 
 
 
@@ -1711,7 +1798,7 @@ p#thank-you {
 #menu-button{
     display: block;
     width: 50px;
-    height: 49px;
+    height: 110px;
     margin:0;
     padding:3px;
     border-radius: 15px 0 15px 0;

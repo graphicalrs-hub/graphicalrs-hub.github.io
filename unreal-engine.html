@@ -45,11 +45,23 @@
         <div class="unrela-video">
             <video controls>
                 <source src="slike\flythrough.mp4" type="video/mp4">
-                 Your browser does not support the video tag.
+                 Your browser does not support the video.
             </video>
         </div>
     </div>
-        
+
+    <div class="fade-in-up">
+    <h2>- Prehistoric <span>world</span></h2>
+    <p>For our third-year Video Games course project, we created a game world based on the theme “Prehistoric World with Stairs.”
+            The environment consists of three mountains. The player begins on the first mountain, crosses a river, and follows campfires to reach food, overcome obstacles, and progress toward their final goal—their hidden village. <br><br>
+
+            The world is set at night, illuminated only by moonlight and campfires, guiding the player through the dark environment. The player has a health bar that slowly decreases over time. Food can be found inside huts located at the tops of the mountains, reachable only by steep staircases. Nearby campfires serve as markers that food is close. The player must collect whole apples to restore energy, while bitten or rotten apples reduce health by 25%. Touching fire also reduces health by 25%. <br><br>
+
+            Throughout the journey, players encounter steep climbs, river crossings, and a low cave they must crawl through without hitting the jagged ceiling. Animal bones, plants, tools, and utensils surround the huts to enhance the prehistoric atmosphere. <br> <br>
+
+            If the player falls into the water, they die. The ultimate objective is to safely navigate all obstacles and return to their village, hidden deep between tall mountains and only visible once they pass through a narrow mountain gap.</p>
+
+    </div> 
     
 
 
@@ -83,6 +95,21 @@
 
     <img src="slike/footernovi-01.png" alt="bg decoratiom" class="footer-bg">
 	</div>
+
+   <script>
+const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add("show");
+        }
+    });
+}, { 
+    threshold: 0.4,          // mora 40% elementa u viewportu
+    rootMargin: "0px 0px -100px 0px" // neće se aktivirati previše rano
+});
+
+document.querySelectorAll(".fade-in-up").forEach(el => observer.observe(el));
+</script>
 
 
 
