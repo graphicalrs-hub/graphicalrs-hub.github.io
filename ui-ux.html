@@ -55,7 +55,7 @@ Overall, the design successfully communicates Petrus’ blend of modern refineme
         </div> -->
 
 
-        <div class="gallery-container">
+    <div class="gallery-container">
 
     <!-- Glavna prikazana slika i opis -->
     <div class="main-display">
@@ -70,37 +70,38 @@ Overall, the design successfully communicates Petrus’ blend of modern refineme
 
     <!-- Male slike i tekstovi koji menjaju glavnu -->
     <div class="thumbs">
-        <div class="thumb" data-img="slike/img1.jpg" data-text="Ovo je opis prve slike.">
+        <div class="thumb">
             <p>Manu page</p>
             <img src="slike\meni.png">
             
         </div>
 
-        <div class="thumb" data-img="slike/img2.jpg" data-text="Opis druge slike.">
+        <div class="thumb">
             <p>Bar page</p>
             <img src="slike\bar.png">
             
         </div>
 
-        <div class="thumb" data-img="slike/img3.jpg" data-text="Opis treće slike.">
+        <div class="thumb">
             <p>List of drinks</p>
             <img src="slike\coctails.png">
             
         </div>
 
-        <div class="thumb" data-img="slike/img4.jpg" data-text="Opis četvrte slike.">
+        <div class="thumb">
             <p>Reservations page</p>
             <img src="slike\reservation.png">
             
         </div>
 
-        <div class="thumb" data-img="slike/img5.jpg" data-text="Opis pete slike.">
+        <div class="thumb">
             <p>Guestbook</p>
             <img src="slike\opinion.png">
             
         </div>
 
-    </div>
+    </div>  
+
 </div>
 
        
@@ -130,6 +131,45 @@ Overall, the design successfully communicates Petrus’ blend of modern refineme
 
     <img src="slike/footernovi-01.png" alt="bg decoratiom" class="footer-bg">
 	</div>
+
+
+    
+
+   <!-- POPUP -->
+<div id="popup" class="popup">
+    <span id="closePopup" class="close-btn">&times;</span>
+    <img id="popupImg" class="popup-content">
+</div>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+
+    const popup = document.getElementById("popup");
+    const popupImg = document.getElementById("popupImg");
+    const closeBtn = document.getElementById("closePopup");
+
+    // klik na bilo koju thumb sliku
+    document.querySelectorAll(".thumb img").forEach(img => {
+        img.addEventListener("click", () => {
+            popup.style.display = "flex";
+            popupImg.src = img.getAttribute("src");
+        });
+    });
+
+    // klik na X
+    closeBtn.addEventListener("click", () => {
+        popup.style.display = "none";
+    });
+
+    // klik van slike
+    popup.addEventListener("click", (e) => {
+        if (e.target === popup) {
+            popup.style.display = "none";
+        }
+    });
+
+});
+</script>
 
 
 
