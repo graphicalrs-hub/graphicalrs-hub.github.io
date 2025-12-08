@@ -1260,7 +1260,6 @@ input[type="radio"] {
 
 #first-picture{
   color: white;
-  margin-top: 15vh;
   margin-left: 10vw;
 }
 
@@ -1268,6 +1267,7 @@ input[type="radio"] {
   font-family: Fin;
   margin-bottom: 8vh;
   font-size: 6vw;
+  margin-top: 15vh;
 }
 
 #first-picture h2{
@@ -1279,7 +1279,7 @@ input[type="radio"] {
 #first-picture p{
   margin-right: 10vw ;
   text-align: justify;
-  line-height: 4vh;
+  
 }
 
 .image-layout {
@@ -1307,7 +1307,6 @@ input[type="radio"] {
   color: white;
   margin-right: 10vw ;
   text-align: justify;
-  line-height: 4vh;
   margin-left: 10vw;
   margin-bottom: 23vh;
 }
@@ -1323,14 +1322,12 @@ input[type="radio"] {
 }
 
 .explained p{
-  line-height: 3vh;
   overflow: hidden;
 }
 
 
 .mockups-container {
   width: 100%;
-  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1380,12 +1377,12 @@ input[type="radio"] {
   .newsletter h1 {
    font-family: Fin; 
    font-size: 6vw;
+   margin-top: 15vh;
    margin-bottom: 6vh;
 
   }
 
   .newsletter p{
-    line-height: 4vh;
     margin-bottom: 4vh;
   }
 
@@ -1398,19 +1395,56 @@ input[type="radio"] {
 
 
   #news-explained{
-    margin-top: 10vh;
+    margin: 10vh 10vw 30vh 10vw;
   }
+
 
 
 
 
 @media (max-width: 1024px) {
-  #logo h1 {
-    font-size: 7vw;
+ #first-picture h1 {
+    margin-bottom: 1vh;
+    margin-top: 10vh;
+  } 
+
+  .image-layout{
+    margin: 5vh 0;
   }
+
+  #first-picture p{
+    margin-bottom: 2vh;
+  }
+
+   #first-picture h2{
+    margin-bottom: 1vh;
+   }
   
   .mockups-container h1{
     margin-bottom: 2vh;
+    
+  }
+
+  .newsletter h1{
+    margin-bottom: 2vh;
+    margin-top: 7vh;
+  }
+
+  .explained h2{
+    padding-bottom: 1vh;
+  }
+
+
+  .explained{
+    margin-bottom: 10vh;
+  }
+
+  .newsletter p{
+    margin-bottom: 2vh;
+  }
+
+  #news-explained{
+    margin: 5vh 10vw 10vh 10vw;
   }
 }
 
@@ -1436,17 +1470,7 @@ input[type="radio"] {
 }
 
 
-/* logo section */
-
-#logo{
-  height: auto;
-  margin: 8vh 0
-}
-
-.color{
-  height: auto;
-  margin: 9vh 0
-}
+/* design section */
 
 .mockups-container{
   flex-direction: column;
